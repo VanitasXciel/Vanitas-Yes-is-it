@@ -1,0 +1,122 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta
+            http-equiv="content-type"
+            content="application/xhtml+xml; charset=utf-8"
+        />
+        <title>ALFIAM STORE</title>
+    </head>
+    <body>
+        <style>
+            body {
+                background-color: #dbdbdb;
+            }
+            nav {
+                background-color: #0b1936;
+            }
+            .co {
+                flex-wrap: wrap;
+                display: flex;
+                gap: 10px;
+                justify-content: space-evenly;
+                box-sizing: border-box;
+            }
+            .input {
+                background-color: white;
+                box-sizing: border-box;
+                border-radius: 8px;
+                padding: 30px;
+                margin-top: 2rem;
+                box-shadow: 0 2px 10px #bebebe;
+                text-align: center;
+            }
+            p {
+                text-align: left;
+            }
+            .bayar {
+                border: none;
+                background-color: #329f2c;
+                border-radius: 8px;
+                padding: 0.5rem;
+                color: white;
+            }
+            #berhasil {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+                backdrop-filter: blur(5px);
+                justify-content: center;
+                align-items: center;
+            }
+            #berhasil:target {
+                display: flex;
+            }
+            .berhasil-konten {
+                background-color: white;
+                border-radius: 4px;
+                padding: 20px;
+                text-align: center;
+            }
+            .tutup {
+                margin-top: 10px;
+                padding: 8px 16px;
+                background-color: #dc3545;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                text-decoration: none;
+            }
+            .gender {
+                display: flex;
+                align-items: left;
+            }
+        </style>
+
+        <div class="co">
+            <form action="#berhasil" method="get" class="input">
+                <h3>Check Out</h3>
+                <div>
+                    <p>Nama pembeli</p>
+                    <input class="masuk" type="text" required />
+                    <p>Email</p>
+                    <input class="masuk" type="email" required />
+                    <p>Alamat</p>
+                    <input class="masuk" type="text" required />
+                </div>
+                <p>Jenis Kelamin</p>
+                <label for="cwk" class="gender"
+                    ><input
+                        class="gender"
+                        type="radio"
+                        name="kelamin"
+                        required
+                    />Lanang</label
+                >
+                <label for="cwk" class="gender">
+                    <input
+                        class="gender"
+                        type="radio"
+                        name="kelamin"
+                        required
+                    />Wedok</label
+                >
+                <br />
+                <br />
+                <button type="submit" class="bayar">Lakukan Pembayaran</button>
+            </form>
+        </div>
+        <div id="berhasil">
+            <div class="berhasil-konten">
+                <h3>Pembayaran Telah Berhasil Sayang</h3>
+                <img src="200 (2).webp" alt="pemanis" /> <br /><br />
+                <a href="index.html" class="tutup"> Tutup </a>
+            </div>
+        </div>
+    </body>
+</html>

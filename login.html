@@ -1,0 +1,88 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta
+            http-equiv="content-type"
+            content="application/xhtml+xml; charset=utf-8"
+        />
+        <title>ALFIAM STORE</title>
+    </head>
+    <body>
+        <style>
+            body {
+                background-image: url('/bg.jpg');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 100vh;
+                font-family: 'Segoe UI',Verdana,arial;
+            }
+            nav {
+                background-color: #0b1936;
+            }
+            .co {
+                flex-wrap: wrap;
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+                align-items: center;
+                box-sizing: border-box;
+                padding: 40px 30px;
+                width: 100%;
+                height: 100%;
+            }
+            .input {
+               color: white;
+                background: transparent;
+                backdrop-filter: blur(44px);
+                border: 2px solid rgb(255, 255, 255, 0.2);
+                box-sizing: border-box;
+                border-radius: 16px;
+                padding: 20px;
+                margin-top: 2rem;
+                text-align: center;
+               
+     }
+            p {
+                text-align: left;
+            }
+            .bayar {
+                border: none;
+                background-color: #329f2c;
+                border-radius: 8px;
+                padding: 0.5rem;
+                color: white;
+            }
+            .masuk {
+             background: transparent; 
+             border: none;
+             outline: none;
+             border: 2px solid rgb(255, 255, 255, 0.2);   
+             border-radius: 20px;
+             font-size: 12px; 
+             color: white;
+             padding: 5px;
+         }
+         .remember {
+           font-family: arial;
+         }
+              </style>
+
+        <div class="co">
+            <form action="index.html" method="get" class="input">
+                <h3>LOGIN</h3>
+                <div>
+                  <br>
+                    <input class="masuk" type="text" placeholder="Username" required />
+                    <br>
+                    <br>
+                    <input class="masuk" type="password" placeholder="Password" required />
+                </div>
+                <p class="remember"  style="font-size:13px;"><input type="checkbox"  >Remember Me</p>
+                <br>
+                <br>
+                <button type="submit" class="bayar">Login banh</button>
+            </form>
+        </div>
+    </body>
+</html>
