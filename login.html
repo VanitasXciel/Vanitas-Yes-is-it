@@ -1,88 +1,81 @@
-<!doctype html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta
-            http-equiv="content-type"
-            content="application/xhtml+xml; charset=utf-8"
-        />
-        <title>ALFIAM STORE</title>
-    </head>
-    <body>
-        <style>
-            body {
-                background-image: url('/bg.jpg');
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                height: 100vh;
-                font-family: 'Segoe UI',Verdana,arial;
-            }
-            nav {
-                background-color: #0b1936;
-            }
-            .co {
-                flex-wrap: wrap;
-                display: flex;
-                gap: 10px;
-                justify-content: center;
-                align-items: center;
-                box-sizing: border-box;
-                padding: 40px 30px;
-                width: 100%;
-                height: 100%;
-            }
-            .input {
-               color: white;
-                background: transparent;
-                backdrop-filter: blur(44px);
-                border: 2px solid rgb(255, 255, 255, 0.2);
-                box-sizing: border-box;
-                border-radius: 16px;
-                padding: 20px;
-                margin-top: 2rem;
-                text-align: center;
-               
-     }
-            p {
-                text-align: left;
-            }
-            .bayar {
-                border: none;
-                background-color: #329f2c;
-                border-radius: 8px;
-                padding: 0.5rem;
-                color: white;
-            }
-            .masuk {
-             background: transparent; 
-             border: none;
-             outline: none;
-             border: 2px solid rgb(255, 255, 255, 0.2);   
-             border-radius: 20px;
-             font-size: 12px; 
-             color: white;
-             padding: 5px;
-         }
-         .remember {
-           font-family: arial;
-         }
-              </style>
-
-        <div class="co">
-            <form action="index.html" method="get" class="input">
-                <h3>LOGIN</h3>
-                <div>
-                  <br>
-                    <input class="masuk" type="text" placeholder="Username" required />
-                    <br>
-                    <br>
-                    <input class="masuk" type="password" placeholder="Password" required />
-                </div>
-                <p class="remember"  style="font-size:13px;"><input type="checkbox"  >Remember Me</p>
-                <br>
-                <br>
-                <button type="submit" class="bayar">Login banh</button>
-            </form>
-        </div>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Alfian store</title>
+</head>
+<body>
+     <style>
+          body {
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+            background-image: url('bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+          }
+          .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+          }
+          .login {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            border: 2px solid gray;
+            flex-wrap: wrap;
+            min-width: 150px;
+            min-height: 300px;
+            background: transparent;
+            padding: 30px;
+            margin: 2rem;
+            text-align: center;
+            gap: 10px;
+            border-radius: 9px;
+            backdrop-filter: blur(20px);
+          }
+          input {
+            border-radius: 15px;
+            border: none;
+            border: 1.2px solid gray;
+            padding: 10px;
+            background: transparent;
+            color: #eaeaea;
+          }
+          button {
+            border: none;
+            background-color: #3135cb;
+            color: white;
+            border-radius: 5px;
+            padding: 10px;
+            width: 80%;
+            box-shadow: 0 0 5px 2px #3135cb;
+            margin-top: 3rem;
+          }
+          .login h3 {
+            color: white;
+          }
+          button a {
+            text-decoration: none;
+            color: white;
+          }
+     </style>
+     <div class="container">
+       <form action="" method="get" class="login">
+       <h3>LOGIN</h3>
+         <input type="text" placeholder="Nama..." required />
+         <input type="password" placeholder="Password..." required />
+         <button type="submit" ><a href="index.html">login😠</a></button>
+       </form>
+     </div>
+     <iframe style="display: flex; justify-content: center;" width="110" height="200" src="https://www.myinstants.com/instant/ih-takotnyee-50339/embed/" frameborder="0" scrolling="no"></iframe>
+     <iframe width="110" height="200" src="https://www.myinstants.com/instant/woy-lagi-santai-kawan-36801/embed/" frameborder="0" scrolling="no"></iframe>
+</body>
 </html>

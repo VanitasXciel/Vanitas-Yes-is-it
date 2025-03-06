@@ -11,15 +11,14 @@
     z-index: 1;">
      <div class="logo">
        <img src="pk.png" alt="ini logo ya honey">
-       <h4 style="color:white;">ALFIAN <span style="color: #de2424;">STORE</span></h4>
+       <h4 style="color:white;font-family: 'nexa';">ALFIAN <span style="color: #de2424;">STORE</span></h4>
      </div>
       <div id="icon" class="icon" >
        <p class="3baris" style="color:white;">≡</p>
      </div>
      <ul id="inimenu" class="hidden">
        <li>
-         <a href="#" style="color: red;
-    border-bottom: 1.3px solid #ffffff;">Beranda</a>
+         <a href="#" style="color: red;">Beranda</a>
          </li>
          <div class="dropdown">
          <a class="pro">Produk</a> 
@@ -36,16 +35,49 @@
    </nav>
    <div class="beranda1">
    <div class="beranda">
-  <h2 style="color: white;"> ALFIAN <span style="color: #a70505;">STORE</span></h2>
-  <p style="color: white;"> HALO!, selamat datang di Alfian Store website ini dibuat untuk menjual produk-produk gadget dan hanya untuk tugas semata. Website ini dibuat oleh Alfian X RPL 1 dari SMK Bhina Karya KRA </p>
+  <h2 style="color: white;">Welcome to, ALFIAN<span style="color: #a70505;">STORE</span></h2>
+  <p style="color: white;">Temukan gadget terbaru dengan harga terbaik hanya di toko kami!</p>
   <br>
-  <button class="loginhome"> <a href="login.html">LOGIN</a></a>
+  <button class="loginhome"> <a href="login.html">LOGIN</a> </button>
    </div>
-  </div>
-    <div class="wrapper">
-      <div class="slider">
-      </div>
-    </div>
+   </div>
+    <h2 style="text-align: center; font-family: nama; color: white;"> NEWS </h2>
+   <div class="cardcont">
+     <div class="card">
+       <img src="br.jpg" alt="tol">
+       <div class="card-content">
+         <h3>Samsung S25 Ultra</h3>
+         <p>
+           Samsung Galaxy S25 Ultra hadir dengan kamera utama 200 MP untuk kualitas foto luar biasa. Ditenagai oleh chipset Exynos terbaru dan layar Dynamic AMOLED 2X 6,8 inci.
+         </p>
+       </div>
+     </div>
+     <div class="card">
+       <img src="hos2.jpeg" alt="tol">
+       <div class="card-content">
+         <h3>HyperOS 2.0</h3>
+       <p>
+         HyperOS 2.0 telah resmi dirilis dengan Sistem operasi yang juga menawarkan antarmuka yang lebih intuitif dan integrasi yang lebih baik dengan ekosistem perangkat Xiaomi.
+       </p>
+       </div>
+     </div>
+     <div class="card">
+       <img src="brnd.jpg" alt="tol">
+       <div class="card-content">
+         <h3>HyperOS 2.0</h3>
+       <p>Perangkat Xiaomi yang mendapat pembaruan ke HyperOS 2.0 termasuk seri Xiaomi 13 dan seri Redmi 13.
+       </p>
+       </div>
+     </div>
+     <div class="card">
+       <img src="ip15.jpeg" alt="tol">
+       <div class="card-content">
+         <h3>Action Button Iphone feature</h3>
+       <p>IPhone 15 Pro Max memperkenalkan fitur Action Button yang memungkinkan pengguna untuk melakukan berbagai fungsi kustom.
+       </p>
+       </div>
+     </div>
+   </div>
     
     <div class="about">
       <div class="tentangteks">
@@ -58,9 +90,9 @@
       </p>
       </div>
     </div>
-  <div id="contact"class="kontak">
+  <div id="contact" class="kontak">
     <div class="kontak-konten">
-      <h2 style="font-family: nama; text-align: center;">Media Sosial</h2>
+      <h2 style="font-family: nama; text-align: center;font-size: 21px;">Media Sosial</h2>
       <div class="medsos">
       <a href="https://wa.me/+62895629270406"> <img src="wa.png"> Whatsapp</a>
      
@@ -71,7 +103,7 @@
     </div>
     <div id="kontak" class="kontak-konten">
       <form class="form" accept-charset="utf-8">
-    <h3 style="color: #fcfcfc; font-family: times new roman;">KONTAK</h3>
+    <h3 style="color: #fcfcfc; font-family: times new roman; font-size: 20px;">KONTAK</h3>
       <input class="kon" type="text" placeholder="Nama" required>
       <input class="kon" type="email" placeholder="Email" required>
        <input class="kon" type="text" placeholder="Pesan" required>
@@ -84,5 +116,12 @@
      <p>ALFIAN STORE &copy;2025</p>
    </footer>
    <script src="Main.js" type="text/javascript" charset="utf-8"></script>
+   <script>
+     const days = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat','Sabtu']; 
+     const dayIndex = new Date().getDay(); 
+     const dayName = days[dayIndex]; 
+
+     alert('Hari ini adalah hari ' + dayName);
+   </script>
 </body>
 </html>

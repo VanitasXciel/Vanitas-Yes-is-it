@@ -5,7 +5,7 @@
             http-equiv="content-type"
             content="application/xhtml+xml; charset=utf-8"
         />
-        <title>ALFIAM STORE</title>
+        <title>ALFIAN STORE</title>
     </head>
     <body>
         <style>
@@ -15,12 +15,16 @@
             nav {
                 background-color: #0b1936;
             }
+              
             .co {
                 flex-wrap: wrap;
                 display: flex;
                 gap: 10px;
                 justify-content: space-evenly;
                 box-sizing: border-box;
+                font-family: 'rbt';
+                width: 100%;
+               
             }
             .input {
                 background-color: white;
@@ -34,12 +38,17 @@
             p {
                 text-align: left;
             }
+            .masuk{
+              border-radius: 9px;
+              
+            }
             .bayar {
                 border: none;
-                background-color: #329f2c;
+                background-color: #5198c4;
                 border-radius: 8px;
                 padding: 0.5rem;
                 color: white;
+                width: 100%;
             }
             #berhasil {
                 display: none;
@@ -61,6 +70,7 @@
                 border-radius: 4px;
                 padding: 20px;
                 text-align: center;
+                font-family: 'rbt';
             }
             .tutup {
                 margin-top: 10px;
@@ -76,11 +86,30 @@
                 display: flex;
                 align-items: left;
             }
+             @font-face {
+              font-family: 'rbt';
+              src: url('roboto.ttf');
+            }
+             @font-face {
+              font-family: 'nexa';
+              src: url('nex.ttf');
+            }
+            #payment-method {
+            display: flex;
+            background: transparent;
+            border-radius: 8px;
+            color: black;
+            text-align: left;
+            width: 20px 20px;
+            margin: 14px 0;
+            border: 2px solid black;
+        }
         </style>
 
         <div class="co">
             <form action="#berhasil" method="get" class="input">
-                <h3>Check Out</h3>
+              <img style=" width: 80px; border-radius: 50%; border: 1.5px solid gray; padding: 8px;" src="pk.png" alt="logo honey">
+                <h3 style="font-family: 'nexa'">CHECK OUT</h3>
                 <div>
                     <p>Nama pembeli</p>
                     <input class="masuk" type="text" required />
@@ -106,6 +135,13 @@
                         required
                     />Wedok</label
                 >
+                
+                  <select id="payment-method" name="payment-method" required>
+            <option value="credit-card">Kartu Kredit</option>
+            <option value="bank-transfer">Transfer Bank</option>
+            <option value="cod">Bayar Di Tempat (COD)</option>
+            </select>
+            
                 <br />
                 <br />
                 <button type="submit" class="bayar">Lakukan Pembayaran</button>
@@ -113,7 +149,7 @@
         </div>
         <div id="berhasil">
             <div class="berhasil-konten">
-                <h3>Pembayaran Telah Berhasil Sayang</h3>
+                <h3>Pembayaran Telah Berhasil</h3>
                 <img src="200 (2).webp" alt="pemanis" /> <br /><br />
                 <a href="index.html" class="tutup"> Tutup </a>
             </div>

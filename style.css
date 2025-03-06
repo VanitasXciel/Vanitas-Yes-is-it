@@ -1,14 +1,17 @@
 html {
-    box-sizing: border-box;
+  
     margin: 0;
     padding: 0;
-}
+ }
 body {
     margin: 0;
     padding: 0;
-    height: 200vh;
     background-color: #28385b;
-  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: arial;
+    height: auto;
 }
 nav {
     background: transparent;
@@ -16,7 +19,7 @@ nav {
     box-shadow: 8px 0 10px #555555;
     display: flex;
     justify-content: space-between;
-    padding: 1rem 2rem;
+    padding: 0 0.8rem;
     width: 100%;
     box-sizing: border-box;
     top: 0;
@@ -29,9 +32,11 @@ nav ul {
     list-style: none;
     margin-right: 10px;
     margin-left: 1px;
+    transition: transform 1s ease;
 }
 nav div img {
     width: 40px;
+   margin: 0 5px;
 }
 nav ul a {
     text-decoration: none;
@@ -39,10 +44,11 @@ nav ul a {
     color: white;
     font-weight: bold;
     padding: 1px 0;
+    margin: 0 1rem;
 }
 nav ul a:hover {
     color: red;
-    border-bottom: 1px solid #ffffff;
+    transition: color 0.3s ease-in-out;
 }
 .logo {
     margin-left: 5px;
@@ -59,7 +65,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #112f4a;
+    background: transparent;
+    backdrop-filter: blur(20px);
     color: lightgray;
     width: 100%;
     bottom: 0;
@@ -78,6 +85,8 @@ footer {
     color: white;
     font-family: "Times New Roman";
     font-weight: bold;
+    margin: 0;
+    padding: 5px;
 }
 
 .dropdown ul {
@@ -91,16 +100,17 @@ footer {
     transition: all 0.2s;
     opacity: 0;
     visibility: hidden;
-    border: 1px solid #7a7a7a;
 }
 .dropdown li a {
     display: flex;
     flex-direction: column;
     color: white;
-    padding: 10px;
+    padding: 10px 15px;
     font-size: 15px;
     text-decoration: none;
     box-sizing: border-box;
+    text-align: center;
+    margin:0;
 }
 
 .dropdown .pro:hover ~ ul,
@@ -111,7 +121,7 @@ ul:hover {
 .dropdown a:hover {
     border-bottom: none;
     color: red;
-    border-radius: 2px;
+    background-color: #2d3a51;
 }
 .icon {
     font-size: 25px;
@@ -123,53 +133,50 @@ ul:hover {
         padding: 0 0.8rem;
     }
     nav ul {
+      display: none;
         flex-direction: column;
         width: 100%;
     }
     nav ul li {
         margin: 0.7rem 0;
     }
-    .hidden {
-        display: none;
+    .hidden.active{
+     display: flex;
+    
     }
     .icon {
         display: flex;
         align-items: center;
-        transform: rotate(180deg);
     }
-    .slider {
-    width: 330px;
-    height: 200px;
+    .tentangteks {
+      text-align: center;
     }
-.about h2 {
-  text-align: center;
-}
-.about p {
-  text-align: center;
-}
 }
 .beranda {
     justify-content: flex-start;
-    font-family: "Times New Roman";
+    font-family: "nexa";
     width: 100%;
-    border-radius: 8px;
 }
 .beranda p {
-    font-size: 8px;
+    font-size: 9px;
+    font-family: 'rbt';
+    margin: 0;
 }
 .beranda1 {
     display: flex;
     align-items: center;
     margin: 0;
+    margin-top: 50px;
     margin-bottom: 1vh;
-    padding: 2vh;
+    padding: 3vh;
     box-sizing: border-box;
     height: 40vh;
-    background-image: url("bg.jpg");
+    background-image: url("bg1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    box-shadow: 8px 0 10px #555555;
+    box-shadow: 0 0 10px black;
+    font-family: 'rbt';
 }
 .container {
     flex-wrap: wrap;
@@ -189,8 +196,13 @@ ul:hover {
     box-shadow: 0 2px 10px #bebebe;
     text-align: center;
     max-width: 300px;
+    max-height: 600px;
    flex-wrap: wrap;
    word-wrap: break-word;
+}
+.product:hover {
+  transform:scale(0.95);
+   transition: all 0.1s ;
 }
 .product img {
     width: 250px;
@@ -216,59 +228,39 @@ ul:hover {
     display: inline-block;
     margin-top: 15px;
 }
- .wrapper{
- display: flex;
- align-items: center;
- justify-content: center;
- flex-wrap: wrap;
- padding: 1rem;
-  }
-  .slider{
-    width: 40vh;
-    height: 22vh;
-    background: url('br.jpg');
-    background-size: cover;
-    border-radius: 10px;
-    margin: 0.5rem;
-    animation: slide 10s infinite;
-  }
-  @keyframes slide {
-    0% {
-      background: url('br.jpg');
-      background-size: cover;
-    }
-    25% {
-      background: url('br.jpg');
-      background-size: cover;
-    }
-   50% {
-      background: url('brn.jpg');
-      background-size: cover;
-    }
-   75% {
-      background: url('brn.jpg');
-      background-size: cover;
-    }
-   90% {
-      background: url('brnd.jpg');
-      background-size: cover;
-    }
-   100% {
-      background: url('brnd.jpg');
-      background-size: cover;
-    }
-  }
+ 
   .loginhome {
     border: none;
-    background-color: #6994ca;
-    border-radius: 2px;
+    background-color: #3135cb;
+    border-radius: 6px;
+    cursor: pointer;
+    animation: bounce 3s infinite;
+    box-shadow: 0 0 4px 0.2px inset #eaeaea;
+    padding: 6px 12px;
+  }
+  @keyframes bounce {
+    0%,100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(3px);
+    }
   }
   .loginhome a {
     text-decoration: none;
     color: white;
-    font-family: Monospace;
-    
+    font-family: 'nexa';
+    font-weight: bold;
+    font-size: 12px;
   }
+ .loginhome:hover {
+   color: #000000;
+   background-color: white;
+   box-shadow: 0 0 8px 4px #3135cb;
+ }
+ .loginhome a:hover {
+  color: #000000;
+ }
   .about {
     flex-wrap: wrap;
     box-sizing: border-box;
@@ -277,20 +269,25 @@ ul:hover {
     border-bottom: 1px solid #a6a6a6;
     justify-content: center;
     padding: 1rem ;
-    font-size: 1.5vh;
+    font-size: 1.2vh;
     color: white;
     margin: 1rem;
     align-items: center;
+    
   }
   .about img {
-    width: 17vh;
+    width: 200px;
     border: 1px solid #a6a6a6;
     border-radius: 50%;
     
   }
   .about h2 {
-    font-size: 3vh;
+    font-size: 22px;
     font-family: 'nama',arial;
+    margin: 0;
+  }
+  .about p {
+    font-size: 10px;
   }
   .tentangteks {
     padding: 30px;
@@ -300,7 +297,7 @@ ul:hover {
   }
   @font-face {
     font-family : 'nama';
-    src: url('aed.otf')
+    src: url('aed.otf');
   }
   .kontak {
     flex-wrap: wrap;
@@ -308,30 +305,29 @@ ul:hover {
     display: flex;
     justify-content: center;
     padding: 1rem ;
-    font-size: 1.5vh;
+    font-size: 14px;
     color: white;
     margin: 1rem;
     align-items: center;
-    
   }
   .kontak-konten {
     padding: 25px;
     margin: 20px;
     margin: 0.1rem;
-    max-width: 400px;
+   max-width: 400px;
     flex-wrap: wrap;
    word-wrap: break-word;
   }
  .form{
-   color: black;
    font-family: Monospace;
+   display: flex;
+   flex-direction: column;
  }
  #kontak {
    text-align: center;
-   background-color: #abcbd0;
+   background: transparent;
    border-radius: 10px;
-   border: 1px solid#cecece ;
-   box-shadow: 0 2px 10px white;
+   margin-bottom: 4vh;
   
  }
  .kontak-konten a {
@@ -340,19 +336,18 @@ ul:hover {
    text-decoration: none;
    color: #f3f3f3;
    margin: 1vh;
+   font-family: Times New Roman;
+   font-size: 11px;
  }
  .kontak-konten a img {
    width: 2vh;
  }
- .kontak-konten h3 {
-   text-align: center;
- }
  .kon {
    border: none;
    border-bottom:1.2px solid #f4f4f4;
-   margin: 18px 0px;
+   margin: 18px 0;
    background: transparent;
-   color: black;
+   color: white;
  }
  .medsos {
    display: flex;
@@ -360,8 +355,8 @@ ul:hover {
    flex-wrap: wrap;
    word-wrap: break-word;
  }
- .kon::placeholder {
-   color: #e5e5e5;
+ .kon:hover {
+   border: none;
  }
  .product p {
    background-color: #e6e6e6;
@@ -372,4 +367,55 @@ ul:hover {
    margin-bottom: 2vh;
    font-size: 12px;
    box-shadow: inset 0 1px 10px #bebebe;
+   
  }
+ .cardcont {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   background: transparent;
+ }
+ .card {
+   max-width: 160px;
+   max-height: 220px;
+   background-color: #e9e9e9;
+   color: black;
+   border-radius: 7px;
+   overflow: hidden;
+   margin: 1rem;
+   height: auto;
+   flex-wrap: wrap;
+   word-wrap: break-word;
+ }
+ .card:hover {
+   transform:scale(0.95);
+   transition: all 0.1s ;
+ }
+ .card img {
+   width: 100%;
+   height: 40%;
+ }
+ .card-content {
+   padding: 15px;
+   font-family: 'rbt';
+ }
+ .card-content h3 {
+   font-size: 12px;
+   margin-bottom: 0.2rem;
+   margin-top: 0;
+   font-family: 'nexa';
+ }
+ .card-content p {
+   font-size: 9px;
+   color: #a4a4a4;
+   line-height: 1.3;
+ }
+ @font-face {
+   font-family: 'nexa';
+   src: url('nex.ttf');
+ }
+  @font-face {
+   font-family: 'rbt';
+   src: url('roboto.ttf');
+   }
+ 

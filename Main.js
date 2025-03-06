@@ -1,6 +1,6 @@
-const icon = document.getElementById("icon");
-const menulist = document.getElementById("inimenu");
+const icons = document.getElementById("icon");
+const menulis = document.getElementById("inimenu");
 
-icon.addEventListener("click", () => {
-  menulist.classList.toggle("hidden");
+icons.addEventListener("click", () => {
+  menulis.classList.toggle("active");
 });
